@@ -1,23 +1,25 @@
-import sched
+import schedule
 import time
 
 
-def print_time(a='default'):
-    print("From print_time", time.time(), a)
-
-
-def print_some_times(s: sched.scheduler):
-    print(time.time())
-    s.enter(5, 1, print_time)
-    s.enter(2, 2, print_time, argument=('positional',))
-    s.enter(3, 1, print_time, kwargs={'a': 'keyword'})
-    s.run()
+def job():
+    print("I'm working...")
 
 
 def main():
-    s = sched.scheduler(time.time, time.sleep)
-    print_some_times(s)
+    schedule.every(10).seconds.do(job)
+    schedule.every(10).minutes.do(job)
+    schedule.every().hour.do(job)
+    schedule.every().day.at("10:30").do(job)
+    schedule.every(5).to(10).minutes.do(job)
+    schedule.every().monday.do(job)
+    schedule.every().wednesday.at("13:15").do(job)
+    schedule.every().minute.at(":17").do(job)
 
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
 if __name__ == "__main__":
     main()
