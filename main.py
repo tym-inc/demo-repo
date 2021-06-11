@@ -7,7 +7,7 @@ def job():
 
 
 def main():
-    schedule.every(10).seconds.do(job)
+    schedule.every(2).seconds.do(job)
 
 
 while True:
