@@ -8,9 +8,9 @@ def print_time(a='default'):
 
 def print_some_times(s: sched.scheduler):
     print(time.time())
-    s.enter(10, 1, print_time)
-    s.enter(5, 2, print_time, argument=('positional',))
-    s.enter(5, 1, print_time, kwargs={'a': 'keyword'})
+    s.enter(5, 1, print_time)
+    s.enter(2, 2, print_time, argument=('positional',))
+    s.enter(3, 1, print_time, kwargs={'a': 'keyword'})
     s.run()
 
 
