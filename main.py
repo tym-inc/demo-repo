@@ -3,7 +3,7 @@ import time
 
 
 def job():
-    print("I'm working...")
+    print("I'm working... really hard!")
 
 
 def less_frequent_job():
