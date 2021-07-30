@@ -2,10 +2,6 @@ import schedule
 import time
 
 
-def experimental_function(experiment):
-    print("experiment: {experiment}")
-    return experiment
-
 
 def main():
     schedule.every(1).seconds.do(job)
