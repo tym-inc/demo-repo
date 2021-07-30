@@ -8,9 +8,8 @@ def experimental_function(experiment):
 
 
 
-def less_frequent_job():
+def experimental_func():
     print("I'm working... occassionally...")
-
 
 
 def less_frequent_job():
