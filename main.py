@@ -6,10 +6,6 @@ def experimental_function(experiment):
     print("experiment: {experiment}")
     return experiment
 
-def another_experiment():
-    print("I'm working... occassionally...")
-
-
 def less_frequent_job():
     print("I'm working... occassionally...")
 
