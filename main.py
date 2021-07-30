@@ -7,7 +7,7 @@ def main():
 
     while True:
         schedule.run_pending()
-        time.sleep(100)
+        time.sleep(500)
 
 
 if __name__ == "__main__":
