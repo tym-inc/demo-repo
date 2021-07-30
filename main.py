@@ -6,7 +6,7 @@ def experimental_function(experiment):
     print("experiment: {experiment}")
     return experiment
 
-def experimental_func():
+def another_experiment():
     print("I'm working... occassionally...")
 
 
