@@ -2,8 +2,10 @@ import schedule
 import time
 
 
-def job():
-    print("I'm working...")
+def experimental_function(experiment):
+    print("experiment: {experiment}")
+    return experiment
+
 
 
 def less_frequent_job():
@@ -16,7 +18,7 @@ def main():
 
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(100)
 
 
 if __name__ == "__main__":
