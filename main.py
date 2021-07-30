@@ -12,6 +12,11 @@ def less_frequent_job():
     print("I'm working... occassionally...")
 
 
+
+def less_frequent_job():
+    print("I'm working... occassionally...")
+
+
 def main():
     schedule.every(1).seconds.do(job)
     schedule.every(5).seconds.do(less_frequent_job)
