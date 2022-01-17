@@ -3,7 +3,7 @@ import time
 
 
 def experimental_function(experiment):
-    print("experiment: {experiment}")
+    print("experiment number: {experiment}")
     return experiment
 
 
