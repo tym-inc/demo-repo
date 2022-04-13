@@ -1,24 +1,9 @@
-import schedule
-import time
 
-
-
-def test():
-    print('hi')
-
-
-
-def less_frequent_job():
-    print("I'm working... occassionally...")
+import numpy as np
 
 def main():
-    schedule.every(1).seconds.do(job)
-    schedule.every(5).seconds.do(less_frequent_job)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
+    print('hello world')
+    print(np.zeros((2, 3)))
 
 if __name__ == "__main__":
     main()
