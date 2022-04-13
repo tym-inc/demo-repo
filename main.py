@@ -1,9 +1,9 @@
-
-import numpy as np
+from utils.helper import helloWorld
 
 def main():
-    print('hello world')
-    print(np.zeros((2, 3)))
+    print('Start of main')
+    helloWorld()
+    print('End of main')
 
 if __name__ == "__main__":
     main()
