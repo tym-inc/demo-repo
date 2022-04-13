@@ -40,8 +40,12 @@ x =[np.array(a).reshape(1, 30), np.array(b).reshape(1, 30),
  
 # Labels are also converted into NumPy array
 y = np.array(y)
- 
-print(x, "\n\n", y)
+
+print("Inputs")
+print(x)
+
+print("Ground Truth")
+print(y)
 
 # activation function
  
@@ -133,7 +137,6 @@ def predict(x, w1, w2):
 
 w1 = generate_wt(30, 5)
 w2 = generate_wt(5, 3)
-print(w1, "\n\n", w2)
 
 
 """The arguments of train function are data set list x,
